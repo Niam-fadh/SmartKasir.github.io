@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dashboard · Smart Kasir</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<div class="phone-wrap">
+  <div class="phone">
+    <div class="statusbar"><div>Smart Kasir</div><div>🔋 ▪▪▪</div></div>
+    <div class="app">
+      <div class="header">
+        <button class="back" onclick="history.back()">←</button>
+        <div class="title">Dashboard</div>
+        <div style="margin-left:auto"></div>
+      </div>
+      <div class="content">
+        <div id='dashboard'>
+  <div class='banner'>Ringkasan usaha Anda hari ini</div>
+  <div class='kpi'>
+    <div class='card'><div class='label'>Omset Hari Ini</div><div class='num' id='kpiSales'>Rp 0</div></div>
+    <div class='card'><div class='label'>Jumlah Transaksi</div><div class='num' id='kpiTx'>0</div></div>
+    <div class='card'><div class='label'>Produk Menipis</div><div class='num' id='kpiLow'>0</div></div>
+    <div class='card'><div class='label'>Nama Toko</div><div class='num' id='shopName'>-</div></div>
+  </div>
+  <div style='height:12px'></div>
+  <div class='grid cols-3'>
+    <a class='btn ghost' href='pos.html'>Mulai Jual</a>
+    <a class='btn ghost' href='products.html'>Tambah Produk</a>
+    <a class='btn ghost' href='reports.html'>Lihat Laporan</a>
+  </div>
+  <div style='height:12px'></div>
+  <div class='grid cols-2'>
+    <a class='btn' href='settings.html'>Pengaturan</a>
+    <a class='btn' href='settings_backup.html'>Backup/Restore</a>
+  </div>
+</div>
+      </div>
+      
+    <div class="footer">
+      <a class="nav-btn active" href="dashboard.html">Dashboard</a>
+      <a class="nav-btn " href="pos.html">POS</a>
+      <a class="nav-btn " href="products.html">Produk</a>
+      <a class="nav-btn " href="transactions.html">Transaksi</a>
+      <a class="nav-btn " href="reports.html">Laporan</a>
+    </div>
+    
+    </div>
+  </div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

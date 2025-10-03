@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laporan · Smart Kasir</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<div class="phone-wrap">
+  <div class="phone">
+    <div class="statusbar"><div>Smart Kasir</div><div>🔋 ▪▪▪</div></div>
+    <div class="app">
+      <div class="header">
+        <button class="back" onclick="history.back()">←</button>
+        <div class="title">Laporan</div>
+        <div style="margin-left:auto"></div>
+      </div>
+      <div class="content">
+        <div id='reports'>
+  <div class='kpi'>
+    <div class='card'><div class='label'>Penjualan Total</div><div class='num' id='repSales'>Rp 0</div></div>
+    <div class='card'><div class='label'>Jumlah Transaksi</div><div class='num' id='repCount'>0</div></div>
+  </div>
+  <div style='height:12px'></div>
+  <div class='card'><div class='label'>Produk Terlaris</div><div id='topProducts' class='list'></div></div>
+  <div style='height:12px'></div>
+  <button id='exportBtn' class='btn block'>Ekspor JSON</button>
+</div>
+      </div>
+      
+    <div class="footer">
+      <a class="nav-btn " href="dashboard.html">Dashboard</a>
+      <a class="nav-btn " href="pos.html">POS</a>
+      <a class="nav-btn " href="products.html">Produk</a>
+      <a class="nav-btn " href="transactions.html">Transaksi</a>
+      <a class="nav-btn active" href="reports.html">Laporan</a>
+    </div>
+    
+    </div>
+  </div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
